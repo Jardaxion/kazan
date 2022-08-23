@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/style.min.css">
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+        <!-- Шрифты -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Manrope:wght@300;700;800&family=Montserrat:ital,wght@0,300;0,400;0,700;1,400&family=Roboto:wght@300&family=Spectral:wght@400;500;600;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header class="header">
+            <div class="wrapper">
+                <div class="header__inner">
+                    <div class="header__inner-left">
+                        <div class="header__buttons">
+                            <button class="header__buttons-item _home button-round"><img src="img/header/menu.svg" alt=""></button>
+                            <button class="header__buttons-item _phone button-round-mini"><img src="img/header/phone.svg" alt=""></button>
+                        </div>
+                        <div class="header__logo">
+                            <img class="header__logo-logo" src="img/header/logo.svg" alt="">
+                            <img class="header__logo-text" src="img/header/logo-text.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="header__inner-right">
+                        <a class="header__phone" href="tel:+78008482984">
+                            <img src="img/header/greyPhone.svg" alt="">
+                            <span>8 800 848-29-84</span>
+                        </a>
+                        <a class="header__phone" href="tel:+78008482984">
+                            <img src="img/header/greyPhone.svg" alt="">
+                            <span>8 800 848-29-84</span>
+                        </a>
+                        <button class="header__button button js-open-modal" data-openModal="request">Связаться</button>
+                        <a class="header__basket" href="basket.html">
+                            <img src="img/header/basket.svg" alt="">
+                            <p class="header__basket-circle">2</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="header__menu">
+                    <div class="menu__content">
+                        <div class="menu__top">
+                            <div class="menu__buttons">
+                                <button class="menu__buttons-item _close button-round"><img src="img/header/exit.svg" alt=""></button>
+                                <button class="menu__buttons-item button-round-mini"><img src="img/header/phone.svg" alt=""></button>
+                            </div>
+                            <div class="menu__logo">
+                                <img class="menu__logo-logo" src="img/header/logo.svg" alt="">
+                                <img class="menu__logo-text" src="img/header/logo-text.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="menu__bottom">
+                            <ul class="menu__content-list">
+                                <li class="menu__content-item">
+                                    <a class="" href="index.html">Главная</a>
+                                </li>
+                                <li class="menu__content-item">
+                                    <a class="" href="catalog.html">Каталог</a>
+                                </li>
+                                <li class="menu__content-item">
+                                    <a class="" href="about.html">О нас</a>
+                                </li>
+                                <li class="menu__content-item">
+                                    <a class="" href="pay.html">Доставка и оплата</a>
+                                </li>
+                                <li class="menu__content-item">
+                                    <a class="" href="catalog.html">Акции</a>
+                                </li>
+                            </ul>
+                            <div class="menu__bottom-buttons">
+                                <a class="header__button" href="">
+                                    <img src="img/header/greyPhone.svg" alt="">
+                                    <span>8 800 848-29-84</span>
+                                </a>
+                                <a class="header__button js-open-modal" data-openModal="request" href="#">Связаться</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="whatsapp">
+                <a class="whatsapp__inner" href="#">
+                    <img class="whatsapp__inner-img" src="img/whatsapp.svg" alt="">
+                    <p class="whatsapp__inner-text">Консультация</p>
+                </a>
+            </div>
+        </header>
+
+        <main>
+            <section class="card">
+                <div class="container">
+                    <div class="card__inner">
+                        <a class="card__return" href="catalog.html"><img src="img/half-arrow-left.svg" alt="">Вернуться назад</a>
+                        <div class="card__content">
+                            <div class="card__top">
+                                <div class="card__left">
+                                    <div class="card__imgs">
+                                        <img class="card__imgs-item" src="img/slider/product.png" alt="">
+                                        <img class="card__imgs-item" src="img/slider/product.png" alt="">
+                                        <img class="card__imgs-item" src="img/slider/product.png" alt="">
+                                        <img class="card__imgs-item" src="img/slider/product.png" alt="">
+                                    </div>
+                                    <div class="card__arrows">
+                                        <span class="card__prev arrow arrowCardPrev">
+                                            <svg width="39" height="16" viewBox="0 0 39 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M0.292893 7.29289C-0.0976295 7.68341 -0.0976296 8.31658 0.292892 8.7071L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41422 8L8.07107 2.34314C8.46159 1.95262 8.46159 1.31945 8.07107 0.928929C7.68054 0.538405 7.04738 0.538405 6.65685 0.928929L0.292893 7.29289ZM39 7L1 7L1 9L39 9L39 7Z" fill="black"/>
+                                            </svg>
+                                        </span>
+                                        <span class="card__next arrow arrowCardNext">
+                                            <svg width="41" height="16" viewBox="0 0 41 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M40.7071 8.70711C41.0976 8.31658 41.0976 7.68342 40.7071 7.29289L34.3431 0.928932C33.9526 0.538408 33.3195 0.538408 32.9289 0.928932C32.5384 1.31946 32.5384 1.95262 32.9289 2.34315L38.5858 8L32.9289 13.6569C32.5384 14.0474 32.5384 14.6805 32.9289 15.0711C33.3195 15.4616 33.9526 15.4616 34.3431 15.0711L40.7071 8.70711ZM0 9H40V7H0V9Z" fill="black"/>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="card__right">
+                                    <h3 class="card__right-title">Комплект какзан + печь</h3>
+                                    <div class="card__availability">
+                                        <span class="card__availability-text">В наличии</span>
+                                        <img src="img/greenCheck.svg" alt="" class="card__availability-img">
+                                    </div>
+                                    <div class="card__prices">
+                                        <p class="card__price">3800 руб.</p>
+                                        <p class="card__oldPrice">5700</p>
+                                    </div>
+                                    <button class="card__button header__button">Купить</button>
+                                    <div class="card__description">
+                                        <h4 class="card__description-title">Описание</h4>
+                                        <p class="card__description-description">
+                                            Узбекский чугунный садж диаметром 36 см. Каждый садж выполнен наманганскими мастерами вручную, поэтому он имеет немного неаккуратный внешний вид. Но в то же время узбекский садж самый толстостенный из всех представленных в нашем магазине 8-10мм толщина не даст Вашим блюдам быстро остынуть !
+                                            <br><br>
+                                            + Кованная подставка под казан 3-10л или любой садж. Для подогрева блюда: можете положить горячие угли на подставку и затем поставить казан или садж — еда дольше будет остывать. В подставку можно установить свечу или горящие угли для подогрева саджа.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card__bottom">
+                                <h3 class="card__bottom-title">Характеристики</h3>
+                                <div class="card__chars">
+                                    <div class="card__char">
+                                        <p class="card__char-title">Диаметр</p>
+                                        <p class="card__char-char">40</p>
+                                    </div>
+                                    <div class="card__char">
+                                        <p class="card__char-title">Вес без подставки</p>
+                                        <p class="card__char-char">5.3</p>
+                                    </div>
+                                    <div class="card__char">
+                                        <p class="card__char-title">Высота</p>
+                                        <p class="card__char-char">19</p>
+                                    </div>
+                                    <div class="card__char">
+                                        <p class="card__char-title">Глубина саджа</p>
+                                        <p class="card__char-char">6</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="popular">
+                <div class="container">
+                    <div class="popular__inner">
+                        <div class="popular__top">
+                            <h2 class="popular__top-title">Популярные товары</h2>
+                            <div class="arrows">
+                                <span class="arrow__prev arrow arrowPopularPrev">
+                                    <svg width="39" height="16" viewBox="0 0 39 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0.292893 7.29289C-0.0976295 7.68341 -0.0976296 8.31658 0.292892 8.7071L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41422 8L8.07107 2.34314C8.46159 1.95262 8.46159 1.31945 8.07107 0.928929C7.68054 0.538405 7.04738 0.538405 6.65685 0.928929L0.292893 7.29289ZM39 7L1 7L1 9L39 9L39 7Z" fill="black"/>
+                                    </svg>
+                                </span>
+                                <span class="arrow__next arrow arrowPopularNext">
+                                    <svg width="41" height="16" viewBox="0 0 41 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M40.7071 8.70711C41.0976 8.31658 41.0976 7.68342 40.7071 7.29289L34.3431 0.928932C33.9526 0.538408 33.3195 0.538408 32.9289 0.928932C32.5384 1.31946 32.5384 1.95262 32.9289 2.34315L38.5858 8L32.9289 13.6569C32.5384 14.0474 32.5384 14.6805 32.9289 15.0711C33.3195 15.4616 33.9526 15.4616 34.3431 15.0711L40.7071 8.70711ZM0 9H40V7H0V9Z" fill="black"/>
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="popular__content">
+                            <div class="popular__content-item product" data-id="1">
+                                <a class="popular__content-item--images" href="product.html">
+                                    <p class="popular__content-tag">Новое</p>
+                                    <div class="popular__content-images">
+                                        <img src="img/slider/knife.png" alt="">
+                                        <img src="img/slider/knife.png" alt="">
+                                        <img src="img/slider/knife.png" alt="">
+                                        <img src="img/slider/knife.png" alt="">
+                                    </div>
+                                </a>
+                                <p class="popular__content-item--title">Очень длинное наименование этого отличноготовара</p>
+                                <div class="popular__content-price">
+                                    <p class="price">2099 руб.</p>
+                                    <div class="old-Price">
+                                        <p class="old-Price__item">3099 руб.</p>
+                                        <div class="old-Price__line"></div>
+                                    </div>
+                                </div>
+                                <div class="popular__buttons">
+                                    <button class="button popular__buttons-button">В корзину</button>
+                                    <div class="popular__buttons-buy">
+                                        <button class="popular__buttons-button reset">Убрать</button>
+                                        <div class="popular__buttons-inputs">
+                                            <div class="minus"><</div>
+                                            <input class="popular__input" type="text" value="0">
+                                            <div class="plus">></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="popular__content-item product" data-id="2">
+                                <a class="popular__content-item--images" href="product.html">
+                                    <div class="popular__content-images">
+                                        <img src="img/slider/knife.png" alt="">
+                                        <img src="img/slider/knife.png" alt="">
+                                        <img src="img/slider/knife.png" alt="">
+                                        <img src="img/slider/knife.png" alt="">
+                                        <img src="img/slider/knife.png" alt="">
+                                        <img src="img/slider/knife.png" alt="">
+                                    </div>
+                                </a>
+                                <p class="popular__content-item--title">Очень длинное наименование этого отличноготовара</p>
+                                <div class="popular__content-price">
+                                    <p class="price">2099 руб.</p>
+                                </div>
+                                <div class="popular__buttons">
+                                    <button class="button popular__buttons-button">В корзину</button>
+                                    <div class="popular__buttons-buy">
+                                        <button class="popular__buttons-button reset">Убрать</button>
+                                        <div class="popular__buttons-inputs">
+                                            <div class="minus"><</div>
+                                            <input class="popular__input" type="text" value="0">
+                                            <div class="plus">></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="popular__content-item product" data-id="3">
+                                <a class="popular__content-item--images" href="product.html">
+                                    <p class="popular__content-tag">Новое</p>
+                                    <div class="popular__content-images">
+                                        <img src="img/slider/knife.png" alt="">
+                                        <img src="img/slider/knife.png" alt="">
+                                        <img src="img/slider/knife.png" alt="">
+                                        <img src="img/slider/knife.png" alt="">
+                                    </div>
+                                </a>
+                                <p class="popular__content-item--title">Очень длинное наименование этого отличноготовара</p>
+                                <div class="popular__content-price">
+                                    <p class="price">2099 руб.</p>
+                                    <div class="old-Price">
+                                        <p class="old-Price__item">3099 руб.</p>
+                                        <div class="old-Price__line"></div>
+                                    </div>
+                                </div>
+                                <div class="popular__buttons">
+                                    <button class="button popular__buttons-button">В корзину</button>
+                                    <div class="popular__buttons-buy">
+                                        <button class="popular__buttons-button reset">Убрать</button>
+                                        <div class="popular__buttons-inputs">
+                                            <div class="minus"><</div>
+                                            <input class="popular__input" type="text" value="2">
+                                            <div class="plus">></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="popular__content-item product" data-id="4">
+                                <a class="popular__content-item--images" href="product.html">
+                                    <p class="popular__content-tag">Новое</p>
+                                    <div class="popular__content-images">
+                                        <img src="img/slider/knife.png" alt="">
+                                        <img src="img/slider/knife.png" alt="">
+                                        <img src="img/slider/knife.png" alt="">
+                                        <img src="img/slider/knife.png" alt="">
+                                    </div>
+                                </a>
+                                <p class="popular__content-item--title">Очень длинное наименование этого отличноготовара</p>
+                                <div class="popular__content-price">
+                                    <p class="price">2099 руб.</p>
+                                    <div class="old-Price">
+                                        <p class="old-Price__item">3099 руб.</p>
+                                        <div class="old-Price__line"></div>
+                                    </div>
+                                </div>
+                                <div class="popular__buttons">
+                                    <button class="button popular__buttons-button">В корзину</button>
+                                    <div class="popular__buttons-buy">
+                                        <button class="popular__buttons-button reset">Убрать</button>
+                                        <div class="popular__buttons-inputs">
+                                            <div class="minus"><</div>
+                                            <input class="popular__input" type="text" value="0">
+                                            <div class="plus">></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="popular__content-item product" data-id="5">
+                                <a class="popular__content-item--images" href="product.html">
+                                    <p class="popular__content-tag">Новое</p>
+                                    <div class="popular__content-images">
+                                        <img src="img/slider/knife.png" alt="">
+                                        <img src="img/slider/knife.png" alt="">
+                                        <img src="img/slider/knife.png" alt="">
+                                        <img src="img/slider/knife.png" alt="">
+                                    </div>
+                                </a>
+                                <p class="popular__content-item--title">Очень длинное наименование этого отличноготовара</p>
+                                <div class="popular__content-price">
+                                    <p class="price">2099 руб.</p>
+                                    <div class="old-Price">
+                                        <p class="old-Price__item">3099 руб.</p>
+                                        <div class="old-Price__line"></div>
+                                    </div>
+                                </div>
+                                <div class="popular__buttons">
+                                    <button class="button popular__buttons-button">В корзину</button>
+                                    <div class="popular__buttons-buy">
+                                        <button class="popular__buttons-button reset">Убрать</button>
+                                        <div class="popular__buttons-inputs">
+                                            <div class="minus"><</div>
+                                            <input class="popular__input" type="text" value="0">
+                                            <div class="plus">></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="popular__content-item product" data-id="6">
+                                <a class="popular__content-item--images" href="product.html">
+                                    <p class="popular__content-tag">Новое</p>
+                                    <div class="popular__content-images">
+                                        <img src="img/slider/knife.png" alt="">
+                                        <img src="img/slider/knife.png" alt="">
+                                        <img src="img/slider/knife.png" alt="">
+                                        <img src="img/slider/knife.png" alt="">
+                                    </div>
+                                </a>
+                                <p class="popular__content-item--title">Очень длинное наименование этого отличноготовара</p>
+                                <div class="popular__content-price">
+                                    <p class="price">2099 руб.</p>
+                                    <div class="old-Price">
+                                        <p class="old-Price__item">3099 руб.</p>
+                                        <div class="old-Price__line"></div>
+                                    </div>
+                                </div>
+                                <div class="popular__buttons">
+                                    <button class="button popular__buttons-button">В корзину</button>
+                                    <div class="popular__buttons-buy">
+                                        <button class="popular__buttons-button reset">Убрать</button>
+                                        <div class="popular__buttons-inputs">
+                                            <div class="minus"><</div>
+                                            <input class="popular__input" type="text" value="0">
+                                            <div class="plus">></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="popular__content-item product" data-id="7">
+                                <a class="popular__content-item--images" href="product.html">
+                                    <p class="popular__content-tag">Новое</p>
+                                    <div class="popular__content-images">
+                                        <img src="img/slider/knife.png" alt="">
+                                        <img src="img/slider/knife.png" alt="">
+                                        <img src="img/slider/knife.png" alt="">
+                                        <img src="img/slider/knife.png" alt="">
+                                    </div>
+                                </a>
+                                <p class="popular__content-item--title">Очень длинное наименование этого отличноготовара</p>
+                                <div class="popular__content-price">
+                                    <p class="price">2099 руб.</p>
+                                    <div class="old-Price">
+                                        <p class="old-Price__item">3099 руб.</p>
+                                        <div class="old-Price__line"></div>
+                                    </div>
+                                </div>
+                                <div class="popular__buttons">
+                                    <button class="button popular__buttons-button">В корзину</button>
+                                    <div class="popular__buttons-buy">
+                                        <button class="popular__buttons-button reset">Убрать</button>
+                                        <div class="popular__buttons-inputs">
+                                            <div class="minus"><</div>
+                                            <input class="popular__input" type="text" value="0">
+                                            <div class="plus">></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="popular__content-item product" data-id="8">
+                                <a class="popular__content-item--images" href="product.html">
+                                    <p class="popular__content-tag">Новое</p>
+                                    <div class="popular__content-images">
+                                        <img src="img/slider/knife.png" alt="">
+                                        <img src="img/slider/knife.png" alt="">
+                                        <img src="img/slider/knife.png" alt="">
+                                        <img src="img/slider/knife.png" alt="">
+                                    </div>
+                                </a>
+                                <p class="popular__content-item--title">Очень длинное наименование этого отличноготовара</p>
+                                <div class="popular__content-price">
+                                    <p class="price">2099 руб.</p>
+                                    <div class="old-Price">
+                                        <p class="old-Price__item">3099 руб.</p>
+                                        <div class="old-Price__line"></div>
+                                    </div>
+                                </div>
+                                <div class="popular__buttons">
+                                    <button class="button popular__buttons-button">В корзину</button>
+                                    <div class="popular__buttons-buy">
+                                        <button class="popular__buttons-button reset">Убрать</button>
+                                        <div class="popular__buttons-inputs">
+                                            <div class="minus"><</div>
+                                            <input class="popular__input" type="text" value="0">
+                                            <div class="plus">></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="wrapper">
+                <div class="footer__inner">
+                    <div class="footer__logo">
+                        <img class="footer__logo-logo" src="img/header/logo.svg" alt="">
+                        <img class="footer__logo-text" src="img/header/logo-text.svg" alt="">
+                    </div>
+                    <div class="footer__center">
+                        <div class="footer__categories">
+                            <h3 class="footer__categories-title footer__title">Все категории</h3>
+                            <div class="footer__categories-content">
+                                <div class="categories__left">
+                                    <a class="categories__left-item footer__item" href="#">Казаны</a>
+                                    <a class="categories__left-item footer__item" href="#">Комплекты</a>
+                                    <a class="categories__left-item footer__item" href="#">Мангалы</a>
+                                    <a class="categories__left-item footer__item" href="#">Афганские казаны</a>
+                                    <a class="categories__left-item footer__item" href="#">Акксесуары</a>
+                                </div>
+                                <div class="categories__right">
+                                    <a class="categories__left-item footer__item" href="#">Рис и специи</a>
+                                    <a class="categories__left-item footer__item" href="#">Саджи</a>
+                                    <a class="categories__left-item footer__item" href="#">Сковородки</a>
+                                    <a class="categories__left-item footer__item" href="#">Ножи пчаки</a>
+                                    <a class="categories__left-item footer__item" href="#">Подарочные наборы</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer__info">
+                            <h3 class="footer__info-title footer__title">Информация</h3>
+                            <div class="footer__info-content">
+                                <a class="footer__info-item footer__item" href="#">Политика конфиденциальности</a>
+                                <a class="footer__info-item footer__item" href="#">Информация о компании</a>
+                                <a class="footer__info-item footer__item" href="#">Контакты</a>
+                                <a class="footer__info-item footer__item" href="#">Правила пользования</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__social">
+                        <a class="footer__social-created" href="#">Создано в <span>Klishin Agency</span></a>
+                        <h3 class="footer__social-title">Мы в социальных сетях</h3>
+                        <div class="footer__social-content">
+                            <a class="footer__social-content--item" href="">
+                                <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 10.778C0.119001 9.93756 0.209668 9.09235 0.360925 8.25804C1.21834 3.53245 4.56387 0.317256 9.34743 0.152486C15.107 -0.0454129 20.884 -0.0558744 26.6426 0.151614C31.849 0.339051 35.6195 4.19415 35.7821 9.40228C35.9552 14.9325 35.9552 20.4763 35.7821 26.0066C35.6195 31.2147 31.8503 35.0694 26.6431 35.2572C20.8844 35.4652 15.1061 35.4704 9.34787 35.2542C4.14061 35.0585 0.540951 31.1946 0.192668 25.9787C0.162591 25.5275 0.0658209 25.0803 0 24.6313C0 20.0134 0 15.3955 0 10.778ZM17.9608 32.1706C20.5963 32.1706 23.2343 32.2495 25.8663 32.1523C29.9929 31.9993 32.5312 29.5365 32.6275 25.4137C32.747 20.2767 32.747 15.1326 32.6275 9.9951C32.5312 5.87323 29.9912 3.35286 25.8663 3.26525C20.6307 3.15453 15.3894 3.1554 10.1538 3.26525C6.06031 3.35112 3.51466 5.82049 3.4035 9.89702C3.26227 15.0991 3.26227 20.3102 3.4035 25.5123C3.51466 29.5884 6.06031 32.0006 10.1543 32.1523C12.7531 32.2491 15.3585 32.1706 17.9608 32.1706Z" fill="black"/>
+                                    <path d="M17.956 8.55664C12.9021 8.55664 8.80469 12.6537 8.80469 17.7075C8.80469 22.7617 12.9021 26.8588 17.956 26.8588C23.0102 26.8588 27.1073 22.7617 27.1073 17.7075C27.1073 12.6537 23.0102 8.55664 17.956 8.55664ZM17.956 23.7081C14.6418 23.7081 11.9554 21.0216 11.9554 17.7075C11.9554 14.3933 14.6418 11.7069 17.956 11.7069C21.2701 11.7069 23.9566 14.3933 23.9566 17.7075C23.9566 21.0216 21.2701 23.7081 17.956 23.7081Z" fill="black"/>
+                                    <path d="M29.819 8.13923C29.819 9.34145 28.8444 10.3161 27.6422 10.3161C26.44 10.3161 25.4648 9.34145 25.4648 8.13923C25.4648 6.93659 26.44 5.96191 27.6422 5.96191C28.8444 5.96191 29.819 6.93659 29.819 8.13923Z" fill="black"/>
+                                </svg>
+                            </a>
+                            <a class="footer__social-content--item" href="">
+                                <svg width="41" height="35" viewBox="0 0 41 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M40.3668 0.958212C39.866 0.340235 39.1159 0 38.2545 0C37.7862 0 37.2901 0.0994193 36.7802 0.296048L2.07458 13.6634C0.232791 14.3726 -0.015263 15.4368 0.000689958 16.0081C0.016643 16.5793 0.32413 17.6278 2.20283 18.231C2.21409 18.2344 2.22535 18.2379 2.23662 18.2411L9.4355 20.3197L13.3287 31.5525C13.8595 33.0839 15.051 34.0352 16.4386 34.0352C17.3135 34.0352 18.174 33.6653 18.9272 32.9659L23.38 28.8291L29.8385 34.0762C29.8391 34.0768 29.84 34.0771 29.8407 34.0778L29.902 34.1276C29.9076 34.1321 29.9135 34.1368 29.9192 34.1412C30.6371 34.703 31.4206 34.9997 32.1861 35H32.1864C33.6819 35 34.8728 33.883 35.2197 32.1547L40.9061 3.8237C41.1345 2.68653 40.943 1.66898 40.3668 0.958212ZM11.8438 19.9249L25.7326 12.7657L17.0845 22.0376C16.9428 22.1894 16.8424 22.3753 16.793 22.5776L15.1254 29.3931L11.8438 19.9249ZM17.2997 31.1826C17.2422 31.236 17.1843 31.2836 17.1264 31.3275L18.6735 25.0051L21.4879 27.2917L17.2997 31.1826ZM38.5516 3.34238L32.8652 31.6737C32.8104 31.9448 32.6356 32.5757 32.1861 32.5757C31.964 32.5757 31.685 32.4536 31.3994 32.2317L24.081 26.2861C24.0801 26.2852 24.0788 26.2842 24.0776 26.2836L19.723 22.7456L32.2292 9.3372C32.6296 8.90797 32.6659 8.25054 32.3153 7.77901C31.9643 7.30747 31.3284 7.15913 30.8082 7.42741L10.2388 18.0302L2.94199 15.9238L37.637 2.5606C37.9301 2.44761 38.1347 2.42394 38.2545 2.42394C38.328 2.42394 38.4587 2.43277 38.5072 2.49306C38.571 2.57165 38.6524 2.8396 38.5516 3.34238Z" fill="black"/>
+                                </svg> 
+                            </a>
+                            <a class="footer__social-content--item" href="">
+                                <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M28.192 4.79572C25.0898 1.70479 20.9642 0.00181274 16.569 0C7.51231 0 0.141467 7.33537 0.137824 16.3512C0.13661 19.2332 0.893123 22.0466 2.33106 24.5264L0 33L8.71042 30.726C11.1105 32.029 13.8125 32.7156 16.5623 32.7164H16.5692C25.6249 32.7164 32.9966 25.3804 33 16.3642C33.0018 11.9947 31.2943 7.88644 28.192 4.79572ZM16.569 29.9548H16.5633C14.1129 29.9538 11.7096 29.2984 9.61245 28.0603L9.11398 27.7656L3.94508 29.1151L5.32474 24.0996L4.99991 23.5854C3.6328 21.4214 2.9109 18.9202 2.91211 16.3522C2.91494 8.85848 9.04153 2.76182 16.5745 2.76182C20.2223 2.76302 23.6513 4.17858 26.2296 6.74764C28.808 9.3167 30.2271 12.7315 30.2259 16.3632C30.2227 23.8575 24.0965 29.9548 16.569 29.9548ZM24.0601 19.7754C23.6496 19.5708 21.6311 18.5826 21.2546 18.4461C20.8786 18.3097 20.6046 18.2418 20.3311 18.6507C20.0573 19.0596 19.2706 19.9801 19.031 20.2526C18.7914 20.5253 18.5522 20.5595 18.1415 20.3549C17.7309 20.1505 16.4081 19.7188 14.8398 18.3268C13.6195 17.2434 12.7956 15.9054 12.5559 15.4965C12.3167 15.0873 12.5539 14.8875 12.7361 14.6627C13.1805 14.1134 13.6255 13.5376 13.7623 13.2651C13.8994 12.9923 13.8308 12.7537 13.7279 12.5492C13.6255 12.3448 12.8045 10.3336 12.4624 9.5153C12.1289 8.7189 11.7907 8.82645 11.5385 8.81396C11.2993 8.80208 11.0255 8.79966 10.7517 8.79966C10.4781 8.79966 10.0332 8.90178 9.65677 9.31106C9.28054 9.72014 8.22005 10.7085 8.22005 12.7196C8.22005 14.7308 9.69118 16.6736 9.8964 16.9463C10.1016 17.2191 12.7915 21.3461 16.9098 23.1157C17.8894 23.5371 18.654 23.7882 19.2504 23.9766C20.234 24.2875 21.1287 24.2436 21.8363 24.1385C22.6252 24.0211 24.2651 23.15 24.6075 22.1956C24.9496 21.2411 24.9496 20.4232 24.8467 20.2526C24.7443 20.0822 24.4705 19.9801 24.0601 19.7754Z" fill="black"/>
+                                </svg>
+                            </a>
+                            <a class="footer__social-content--item" href="">
+                                <svg width="50" height="30" viewBox="0 0 50 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M25.3018 30C32.5351 30 29.9559 25.604 30.5143 24.34C30.5059 23.396 30.4976 22.488 30.5309 21.936C30.9892 22.06 32.0705 22.586 34.3038 24.67C37.7517 28.01 38.6329 30 41.4183 30H46.5453C48.1703 30 49.0161 29.354 49.439 28.812C49.8474 28.288 50.2474 27.368 49.8099 25.936C48.6661 22.488 41.9954 16.534 41.5808 15.906C41.6433 15.79 41.7433 15.636 41.7954 15.556H41.7912C43.1079 13.886 48.1328 6.658 48.8724 3.766C48.8745 3.762 48.8766 3.756 48.8766 3.75C49.2765 2.43 48.9099 1.574 48.5307 1.09C47.9599 0.366 47.0516 0 45.8245 0H40.6975C38.9808 0 37.6788 0.83 37.0204 2.344C35.9184 5.034 32.8226 10.566 30.5018 12.524C30.4309 9.75 30.4788 7.632 30.5163 6.058C30.5913 2.988 30.833 0 27.5143 0H19.456C17.3769 0 15.3873 2.18 17.5415 4.768C19.4248 7.036 18.2185 8.3 18.6248 14.592C17.0415 12.962 14.2248 8.56 12.2332 2.934C11.6749 1.412 10.829 0.00199986 8.44782 0.00199986H3.3208C1.24165 0.00199986 0 1.09 0 2.912C0 7.004 9.43531 30 25.3018 30ZM8.44782 3.002C8.8999 3.002 8.94574 3.002 9.28115 3.916C11.3207 9.682 15.8957 18.214 19.2373 18.214C21.7477 18.214 21.7477 15.744 21.7477 14.814L21.7456 7.41C21.6081 4.96 20.6789 3.74 20.0685 3L27.3768 3.008C27.381 3.042 27.3351 11.198 27.3976 13.174C27.3976 15.98 29.7184 17.588 33.3413 14.068C37.1642 9.926 39.8079 3.734 39.9142 3.482C40.0704 3.122 40.2058 3 40.6975 3H45.8245H45.8453C45.8433 3.006 45.8433 3.012 45.8412 3.018C45.3724 5.118 40.7454 11.81 39.1975 13.888C39.1725 13.92 39.1496 13.954 39.1267 13.988C38.4454 15.056 37.8913 16.236 39.2204 17.896H39.2225C39.3433 18.036 39.6579 18.364 40.1162 18.82C41.5412 20.232 46.4287 25.06 46.862 26.98C46.5745 27.024 46.262 26.992 41.4183 27.002C40.3871 27.002 39.5808 25.522 36.5038 22.542C33.7371 19.958 31.9413 18.902 30.3059 18.902C27.131 18.902 27.3622 21.376 27.3914 24.368C27.4018 27.612 27.381 26.586 27.4039 26.79C27.2185 26.86 26.6872 27 25.3018 27C12.0832 27 3.47496 6.858 3.14372 3.008C3.2583 2.998 4.83536 3.004 8.44782 3.002Z" fill="black"/>
+                                </svg>     
+                            </a> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+        <div class="modal__background"></div>
+        <div class="modal" data-modal="request">
+            <div class="modal__inner">
+                <div class="modal__title">
+                    <h3 class="modal__title-title">Оставить заявку</h3>
+                    <p class="modal__title-description">В течении дня с Вами свяжется менеджер</p>
+                </div>
+                <div class="modal__content">
+                    <form class="modal__form" action="" data-openModal="thanks" data-closeModal="request">
+                        <input class="modal__input" type="text" placeholder="Ф.И.О.">
+                        <input class="modal__input" type="text" placeholder="Телефон">
+                        <button class="modal__input-button" type="submit">Отправить заявку</button>
+                    </form>
+                    <p class="modal__content-under">Отправляя заявку вы соглашаетесь с <a href="polit.html" target="_blank">политикой конфиденциальности</a> сайта</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" data-modal="thanks">
+            <div class="modal__inner">
+                <div class="modal__content">
+                    <h3 class="modal__content-title">Большое спасибо</h3>
+                    <p class="modal__content-description">Ваша заявка успешно отправлена, в течении дня с Вами свяжется менеджер</p>
+                    <button class="modal__input-button js-close-modal" data-closemodal="thanks">Отправить заявку</button>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> <!-- Jquery -->
+        <script src="js/customSelect.js"></script> <!-- Моя "библеотека" с кастомным селектом -->
+        <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> <!-- Slick -->
+        <script src="js/main.min.js"></script> <!-- Мой -->
+    </body>
+</html>
