@@ -24,6 +24,11 @@ $(document).ready(function () {
         $('body').addClass('offScroll');
     });
 
+    $('.header__mobileMenu-btn._home').click(() => {
+        $('.header__menu').addClass('_active');
+        $('body').addClass('offScroll');
+    });
+
     $('.menu__buttons-item._close').click(()=>{
         $('.header__menu').removeClass('_active');
         $('body').removeClass('offScroll');
@@ -61,6 +66,18 @@ $(document).ready(function () {
                 breakpoint: 1025,
                 settings: {
                     slidesToShow: 3,
+                }
+            },
+            {
+                breakpoint: 700,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 351,
+                settings: {
+                    slidesToShow: 1
                 }
             }
         ]
@@ -276,6 +293,21 @@ $(document).ready(function () {
         $(this).parent().data('number', $(this).parent().data('number')-1);
         quiz($('.questions__buttons').data('number'), allPages);
     });
+
+    if($(window).width() <= 740){
+        $('.footer__title').click(function (e) { 
+            e.preventDefault();
+            
+            $(this).next().slideToggle({
+                start: function () {
+                    $(this).css({
+                      display: "flex",
+                      flexDirection: "Column",
+                    })
+                }
+            });
+        });
+    }
 });
 
 //Функции
