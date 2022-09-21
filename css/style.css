@@ -698,6 +698,9 @@ input[type=radio]:checked + .radio .radio__check {
           transform: translateX(0);
   opacity: 1;
 }
+.header__mobileMenu {
+  display: none;
+}
 
 .header._dark {
   background: none;
@@ -783,9 +786,6 @@ input[type=radio]:checked + .radio .radio__check {
 }
 .menu__bottom-buttons .header__button span {
   margin-left: 11px;
-}
-.menu__mobileMenu {
-  display: none;
 }
 
 /* Блок с whataspp */
@@ -3809,6 +3809,25 @@ li:not(:last-of-type) .slider__dots-cards {
   .rightPosition__description-item span,
 .leftPosition__description-item span {
     font-size: 12px;
+  }
+  .popular__top {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .popular .popular__content-price .price {
+    font-size: 10px;
+  }
+  .arrow__next {
+    margin-left: 23px;
+  }
+  .old-Price__item {
+    font-size: 10px;
+  }
+}
+@media (max-width: 390px) {
+  .slider__right .slick-initialized .slick-slide {
+    width: 361px;
   }
 }
 @media (max-width: 350px) {
