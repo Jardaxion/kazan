@@ -5,6 +5,22 @@ $(document).ready(function () {
     //Скрытие загрузки и открытие всего каталога
     $('.catalog__loader').hide();
     $('.catalog__content').show();
+    //Редактирование элоементов, если мобильная версия
+    if($(window).width() <= 740){
+        if($('header').hasClass('_dark')){
+            $('header').removeClass('_dark')
+        }
+
+        if($('main').hasClass('js-noPadding')){
+            $('main').removeClass('js-noPadding');
+        }
+    } else {
+        //Изменение расположения кнопки со звонком при скорлле
+        headerEdit();
+        $(window).scroll(()=>{
+            headerEdit();
+        });
+    }
     //Немного адаптации
     adaptive();
     $('.old-Price__line').css('width', Number($('.old-Price__item').width())+Number(4));
@@ -32,12 +48,6 @@ $(document).ready(function () {
     $('.menu__buttons-item._close').click(()=>{
         $('.header__menu').removeClass('_active');
         $('body').removeClass('offScroll');
-    });
-
-    //Изменение расположения кнопки со звонком при скорлле
-    headerEdit();
-    $(window).scroll(()=>{
-        headerEdit();
     });
 
     //Слайдеры
