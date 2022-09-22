@@ -3911,6 +3911,21 @@ li:not(:last-of-type) .slider__dots-cards {
     width: auto;
     padding: 41px 10px 0 21px;
   }
+  .buy__input-oneLine.radioLine {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .buy__input-oneLine.radioLine .radioLabel {
+    margin-left: 0;
+  }
+  .buy__input-oneLine .radioLabel:not(:last-of-type) {
+    margin-bottom: 20px;
+  }
+  .buy__title {
+    margin-bottom: 20px !important;
+  }
 }
 @media (max-width: 550px) {
   section {
