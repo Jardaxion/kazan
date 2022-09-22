@@ -3829,6 +3829,9 @@ li:not(:last-of-type) .slider__dots-cards {
   .slider__right .slick-initialized .slick-slide {
     width: 361px;
   }
+  .old-Price__item {
+    font-size: 8px;
+  }
 }
 @media (max-width: 350px) {
   .slider__right .slick-initialized .slick-slide {
