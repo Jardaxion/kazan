@@ -127,6 +127,14 @@ $(document).ready(function () {
         slidesToScroll: 1,
         arrows: false,
         draggable: false,
+        responsive: [
+            {
+                breakpoint: 720,
+                settings: {
+                    adaptiveHeight: true
+                }
+            }
+        ]
     });
     $('.arrowReviewsNext').on('click', function(){
         $('.reviews__reviews').slick('slickNext');

@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* Кастомный селект */
+/*Библеотеки*/ /* Кастомный селект */
 .select_body {
   margin-bottom: 20px;
 }
@@ -109,6 +109,7 @@
   border-radius: 0 0 10px 10px;
 }
 
+/*Ресет*/
 * {
   padding: 0;
   margin: 0;
@@ -134,6 +135,7 @@ select {
   display: none !important;
 }
 
+/*Шрифты*/
 @font-face {
   font-family: "GothamPro";
   src: local("GothamPro Regular"), local("GothamPro-Regular"), url("../fonts/GothamPro.woff2") format("woff2");
@@ -158,6 +160,7 @@ select {
   font-weight: 600;
   font-style: normal;
 }
+/*Глобальные вещи*/
 * {
   font-family: "Spectral", serif;
 }
@@ -463,6 +466,7 @@ input[type=radio]:checked + .radio .radio__check {
     font-size: 72px;
   }
 }
+/*Анимация*/
 @-webkit-keyframes phoneRemove {
   50% {
     -webkit-transform: translateY(4px);
@@ -543,7 +547,7 @@ input[type=radio]:checked + .radio .radio__check {
     stroke-dashoffset: -124;
   }
 }
-/* Хедер */
+/*Хедер*/
 .header {
   position: fixed;
   background: white;
@@ -966,6 +970,7 @@ input[type=radio]:checked + .radio .radio__check {
     margin-top: 12px;
   }
 }
+/*Основной контент*/
 /* Слайдер в начале главной страницы */
 .slider {
   margin-bottom: 91px;
@@ -2144,6 +2149,9 @@ li:not(:last-of-type) .slider__dots-cards {
   display: -ms-flexbox;
   display: flex;
 }
+.card__return.mobile {
+  display: none;
+}
 .card__return img {
   padding-right: 10px;
   -webkit-transition: 0.3s all;
@@ -3091,6 +3099,7 @@ li:not(:last-of-type) .slider__dots-cards {
   left: auto;
 }
 
+/*Футер*/
 .footer {
   background: #FBFBFB;
   padding: 101px 163px 85px 174px;
@@ -3326,7 +3335,32 @@ li:not(:last-of-type) .slider__dots-cards {
   .categories__right {
     margin-left: 0;
   }
+  .footer._dark {
+    background: #FBFBFB;
+  }
+  .footer._dark .footer__logo-text path {
+    fill: black;
+  }
+  .footer._dark .footer__title {
+    color: black;
+  }
+  .footer._dark .footer__item {
+    color: black;
+  }
+  .footer._dark .footer__item:hover {
+    color: #FF8D1E;
+  }
+  .footer._dark .footer__social-created {
+    color: black;
+  }
+  .footer._dark .footer__social-content--item svg path {
+    fill: black;
+  }
+  .footer._dark .footer__social-content--item:hover svg path {
+    fill: #FF8D1E;
+  }
 }
+/*Медиа запросы на адаптацию*/
 @media (max-width: 1440px) {
   .reviews__img-item {
     width: 351px;
@@ -3395,6 +3429,7 @@ li:not(:last-of-type) .slider__dots-cards {
   }
   .content__description {
     font-size: 18px;
+    color: #4E4E4E;
   }
   .title__content {
     padding: 154px 24px 0;
@@ -3572,6 +3607,18 @@ li:not(:last-of-type) .slider__dots-cards {
   }
 }
 @media (max-width: 740px) {
+  .card__return.mobile {
+    display: block;
+  }
+  .card__return.article {
+    margin-bottom: 77px;
+  }
+  .card__return {
+    margin: 15px 0;
+  }
+  .header__button:active {
+    color: black;
+  }
   .slider__inner {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -3767,6 +3814,11 @@ li:not(:last-of-type) .slider__dots-cards {
   .aboutFull__description-description {
     width: 361px;
   }
+  .articles {
+    margin-bottom: 74px;
+    margin-top: 0;
+    position: relative;
+  }
   .articles__article {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -3775,7 +3827,14 @@ li:not(:last-of-type) .slider__dots-cards {
     margin-bottom: 46px;
   }
   .articles .miniTitle {
-    font-size: 16px;
+    font-size: 28px;
+    width: 100%;
+    text-align: center;
+    top: 48px;
+    left: -90px;
+    -webkit-transform: translate(0);
+        -ms-transform: translate(0);
+            transform: translate(0);
   }
   .article__left {
     width: 100%;
@@ -3788,6 +3847,9 @@ li:not(:last-of-type) .slider__dots-cards {
   }
   .article__right .header__button {
     display: none;
+  }
+  .article__tag p {
+    font-size: 14px;
   }
   .title,
 .content {
@@ -3854,6 +3916,7 @@ li:not(:last-of-type) .slider__dots-cards {
   }
   .miniTitle {
     font-size: 32px;
+    line-height: 38px;
   }
   .pay__bottom {
     margin-bottom: 0;
@@ -3888,6 +3951,18 @@ li:not(:last-of-type) .slider__dots-cards {
   .card__char {
     width: 100%;
     max-width: none;
+  }
+  .card__button {
+    padding: 4px 25px;
+  }
+  .card__description-description {
+    font-size: 14px;
+  }
+  .infoFull__title {
+    margin-bottom: 15px;
+  }
+  .infoFull__description {
+    margin-bottom: 30px;
   }
 }
 @media (min-width: Cacl(739px)) {
@@ -3928,6 +4003,11 @@ li:not(:last-of-type) .slider__dots-cards {
   }
 }
 @media (max-width: 550px) {
+  .leftPosition__title,
+.rightPosition__title {
+    font-size: 30px;
+    line-height: 35px;
+  }
   section {
     margin-bottom: 50px !important;
   }
@@ -3986,6 +4066,36 @@ li:not(:last-of-type) .slider__dots-cards {
   .card__description {
     width: auto;
   }
+  .rightPosition__description {
+    margin-top: 50px;
+  }
+  .popular__content-item {
+    width: 230px;
+  }
+  .catalog__content-item {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .catalog__content .product {
+    margin: 0px 8px 14px;
+  }
+  .articles .miniTitle {
+    left: 146px;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+@media (max-width: 520px) {
+  .popular__content-item {
+    width: 200px;
+  }
+}
+@media (max-width: 474px) {
+  .popular__content-item {
+    width: 180px;
+  }
 }
 @media (max-width: 420px) {
   .slider__right .slick-initialized .slick-slide {
@@ -4023,6 +4133,17 @@ li:not(:last-of-type) .slider__dots-cards {
   .old-Price__item {
     font-size: 10px;
   }
+  .popular__buttons-button {
+    font-size: 14px;
+  }
+}
+@media (max-width: 432px) {
+  .popular__content-price .price {
+    font-size: 10px;
+  }
+  .popular__content-item {
+    width: 160px;
+  }
 }
 @media (max-width: 390px) {
   .slider__right .slick-initialized .slick-slide {
@@ -4039,6 +4160,9 @@ li:not(:last-of-type) .slider__dots-cards {
   }
   .menu__logo-text {
     width: 90px;
+  }
+  .popular__content-item {
+    width: 140px;
   }
 }
 @media (max-width: 350px) {
