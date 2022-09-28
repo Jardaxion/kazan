@@ -335,11 +335,11 @@ function adaptive(){
     $('.menu__bottom-buttons').css('width', $('.menu__content-list').width());
     $('.questions__line').css('width', Number($('.container').width()-Number(32)));
 
-    if($(window).width() <=720){
-        $('.footer__social-content--item svg').each(function(){
-            $(this).width($(this).width() - 10);
-        })
-    }
+    // if($(window).width() <=720){
+    //     $('.footer__social-content--item svg').each(function(){
+    //         $(this).width($(this).width() - 10);
+    //     })
+    // }
 }
 
 function headerEdit(){

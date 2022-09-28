@@ -3334,6 +3334,12 @@ li:not(:last-of-type) .slider__dots-cards {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .footer__social-content--item svg {
+    width: 30px;
+  }
+  .footer__social-content--item:last-of-type svg {
+    width: 38px;
+  }
   .categories__left {
     margin-bottom: 6px;
   }
@@ -3694,7 +3700,7 @@ li:not(:last-of-type) .slider__dots-cards {
   .popular__buttons-inputs .minus,
 .popular__buttons-inputs .plus,
 .popular__buttons-inputs input {
-    font-size: 32px;
+    font-size: 24px;
   }
   .popular__content-item {
     width: 46%;
@@ -3793,6 +3799,12 @@ li:not(:last-of-type) .slider__dots-cards {
   }
   .reviews__review {
     min-height: 270px !important;
+  }
+  .reviews__review-bottom {
+    margin-top: 25px;
+  }
+  .reviews__review-name {
+    margin-bottom: 8px;
   }
   .aboutCauldron__rightPosition, .aboutCauldron__leftPosition {
     margin-bottom: 32px;
@@ -3929,6 +3941,9 @@ li:not(:last-of-type) .slider__dots-cards {
   .buy__input-oneLine {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+  }
+  .buy__checkText {
+    margin: 0px 0px auto 10px;
   }
   .catalog__title {
     margin: 0px 0px 39px;
@@ -4258,7 +4273,7 @@ li:not(:last-of-type) .slider__dots-cards {
         -ms-flex-align: center;
             align-items: center;
   }
-  .popular .popular__content-price .price {
+  .popular__content-price .price {
     font-size: 10px;
   }
   .arrow__next {
