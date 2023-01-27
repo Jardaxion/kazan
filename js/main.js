@@ -37,6 +37,7 @@ $(document).ready(function () {
     //Открытие-закритие меню
     $('.header__buttons-item._home').click(() => {
         $('.header__menu').addClass('_active');
+        $('.nav').fadeOut();
         $('body').addClass('offScroll');
     });
 
@@ -47,6 +48,7 @@ $(document).ready(function () {
 
     $('.menu__buttons-item._close').click(()=>{
         $('.header__menu').removeClass('_active');
+        $('.nav').fadeIn();
         $('body').removeClass('offScroll');
     });
 
@@ -116,11 +118,11 @@ $(document).ready(function () {
         slidesToScroll: 1,
         arrows: false,
         fade: true,
-        asNavFor: '.reviews__reviews',
+        asNavFor: '.reviews__reviews,.reviews__bottom-reviews',
         draggable: false,
     });
     $('.reviews__reviews').slick({
-        asNavFor: '.reviews__imgs',
+        asNavFor: '.reviews__imgs,.reviews__bottom-reviews',
         fade: true,
         autoplay: false,
         slidesToShow: 1,
@@ -136,12 +138,32 @@ $(document).ready(function () {
             }
         ]
     });
+    $('.reviews__bottom-reviews').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        asNavFor: '.reviews__imgs, .reviews__reviews',
+    })
     $('.arrowReviewsNext').on('click', function(){
         $('.reviews__reviews').slick('slickNext');
     });
     $('.arrowReviewsPrev').on('click', function(){
         $('.reviews__reviews').slick('slickPrev');
     });
+
+    let catalogSwip = new Swiper('.catalog__container.swiper', {
+        loop: false,
+        slidesPerView: 'auto',
+        navigation: {
+            nextEl: '.catalog__rightArrow',
+            prevEl: '.catalog__leftArrow',
+        },
+        scrollbar: {
+            el: '.catalog__scrollbar',
+            draggable: true,
+        },
+    })
 
     //Слайдер на страничке продукты
     $('.card__imgs').slick({
@@ -324,6 +346,21 @@ $(document).ready(function () {
             });
         });
     }
+
+    //Адаптация всех карточек товара под одну высоту
+    let max = 0;
+    $('.catalog__catalog-item').each(function() {
+        max = $(this).height() > max ? $(this).height() : max;
+    })
+
+    $('.catalog__catalog-item').height(max);
+
+    max = 0;
+    $('.popular__content-item').each(function() {
+        max = $(this).height() > max ? $(this).height() : max;
+    })
+
+    $('.popular__content-item').height(max);
 });
 
 //Функции

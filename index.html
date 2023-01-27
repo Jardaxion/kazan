@@ -11,6 +11,8 @@
         <!-- Шрифты -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
         <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Manrope:wght@300;700;800&family=Montserrat:ital,wght@0,300;0,400;0,700;1,400&family=Roboto:wght@300&family=Spectral:wght@400;500;600;700&display=swap" rel="stylesheet">
     </head>
     <body>
@@ -820,94 +822,132 @@
             <section class="reviews">
                 <div class="container">
                     <div class="reviews__inner">
-                        <div class="reviews__left">
-                            <div class="reviews__left-title">
-                                <div class="reviews__title">Отзывы</div>
-                                <div class="arrows">
-                                    <span class="arrow__prev arrow arrowReviewsPrev">
-                                        <svg width="39" height="16" viewBox="0 0 39 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M0.292893 7.29289C-0.0976295 7.68341 -0.0976296 8.31658 0.292892 8.7071L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41422 8L8.07107 2.34314C8.46159 1.95262 8.46159 1.31945 8.07107 0.928929C7.68054 0.538405 7.04738 0.538405 6.65685 0.928929L0.292893 7.29289ZM39 7L1 7L1 9L39 9L39 7Z" fill="black"/>
-                                        </svg>
-                                    </span>
-                                    <span class="arrow__next arrow arrowReviewsNext">
-                                        <svg width="41" height="16" viewBox="0 0 41 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M40.7071 8.70711C41.0976 8.31658 41.0976 7.68342 40.7071 7.29289L34.3431 0.928932C33.9526 0.538408 33.3195 0.538408 32.9289 0.928932C32.5384 1.31946 32.5384 1.95262 32.9289 2.34315L38.5858 8L32.9289 13.6569C32.5384 14.0474 32.5384 14.6805 32.9289 15.0711C33.3195 15.4616 33.9526 15.4616 34.3431 15.0711L40.7071 8.70711ZM0 9H40V7H0V9Z" fill="black"/>
-                                        </svg>
-                                    </span>
+                        <div class="reviews__top">
+                            <div class="reviews__left">
+                                <div class="reviews__left-title">
+                                    <div class="reviews__title">Отзывы</div>
+                                    <div class="arrows">
+                                        <span class="arrow__prev arrow arrowReviewsPrev">
+                                            <svg width="39" height="16" viewBox="0 0 39 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M0.292893 7.29289C-0.0976295 7.68341 -0.0976296 8.31658 0.292892 8.7071L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41422 8L8.07107 2.34314C8.46159 1.95262 8.46159 1.31945 8.07107 0.928929C7.68054 0.538405 7.04738 0.538405 6.65685 0.928929L0.292893 7.29289ZM39 7L1 7L1 9L39 9L39 7Z" fill="black"/>
+                                            </svg>
+                                        </span>
+                                        <span class="arrow__next arrow arrowReviewsNext">
+                                            <svg width="41" height="16" viewBox="0 0 41 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M40.7071 8.70711C41.0976 8.31658 41.0976 7.68342 40.7071 7.29289L34.3431 0.928932C33.9526 0.538408 33.3195 0.538408 32.9289 0.928932C32.5384 1.31946 32.5384 1.95262 32.9289 2.34315L38.5858 8L32.9289 13.6569C32.5384 14.0474 32.5384 14.6805 32.9289 15.0711C33.3195 15.4616 33.9526 15.4616 34.3431 15.0711L40.7071 8.70711ZM0 9H40V7H0V9Z" fill="black"/>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                </div>
+                                <hr class="reviews__line">
+                                <div class="reviews__left-content">
+                                    <img class="reviews__background" src="img/review/backReview.svg" alt=""">
+                                    <div class="reviews__reviews">
+                                        <div class="reviews__review">
+                                            <p class="reviews__review-text">Если бы у меня был такой инструктор по вождению, я бы сэкономила кучу нервов и времени. У Димы есть педагогический талант безусловно. Можно быть спецом, но не уметь объяснить. Для этого нужно иметь талант, и он у него есть. Других яхтенных инструкторов не видела, но видела инструкторов и тренеров в других областях. Дима не разражается и может повторить одно и то же  так, что люди поймут, и до тех пор, пока до них не дойдет. У него получается держать себя в руках, не раздражаться. В итоге ты не чувствуешь себя дурачком или неумехой.</p>
+                                            <div class="reviews__review-bottom">
+                                                <p class="reviews__review-name">Наталья Милютина</p>
+                                                <div>
+                                                    <p class="reviews__review-prof">Руководитель отдела продаж</p>
+                                                    <hr class="reviews__lineUnder">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="reviews__review">
+                                            <p class="reviews__review-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum blanditiis, reiciendis quaerat, nihil vero expedita labore quo alias qui veritatis quisquam, id quibusdam corrupti delectus nulla accusantium dolore sapiente natus!
+                                            Sunt, quasi illum facilis necessitatibus pariatur nulla autem eos numquam quae odio. Ut sit placeat soluta molestias! Sint, ex? Quo doloribus alias nam eos corporis, eaque iure impedit nesciunt hic.
+                                            Soluta fuga autem ipsam facere, animi similique, minima at voluptatibus libero aspernatur dolorum. Modi molestiae reprehenderit voluptatibus, vitae error mollitia tenetur totam officia cupiditate impedit, commodi laborum aspernatur libero. Ea!
+                                            Quo porro sunt, placeat vero rerum, hic eum, cum veritatis asperiores recusandae aliquid. Dolorem totam incidunt eum nobis. Rem pariatur doloremque, delectus cum temporibus ullam error animi! Eaque, doloribus esse?
+                                            Consequatur voluptate facilis eveniet vero earum magnam velit omnis quae labore molestias architecto vitae tempora ipsa, ex sequi voluptatum quidem optio suscipit amet laborum saepe et laboriosam maiores culpa! Quas.</p>
+                                            <div class="reviews__review-bottom">
+                                                <p class="reviews__review-name">Анастасия Картофелева</p>
+                                                <div>
+                                                    <p class="reviews__review-prof">Администратор</p>
+                                                    <hr class="reviews__lineUnder">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="reviews__review">
+                                            <p class="reviews__review-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum blanditiis, reiciendis quaerat, nihil vero expedita labore quo alias qui veritatis quisquam, id quibusdam corrupti delectus nulla accusantium dolore sapiente natus!
+                                            Sunt, quasi illum facilis necessitatibus pariatur nulla autem eos numquam quae odio. Ut sit placeat soluta molestias! Sint, ex? Quo doloribus alias nam eos corporis, eaque iure impedit nesciunt hic.
+                                            Soluta fuga autem ipsam facere, animi similique, minima at voluptatibus libero aspernatur dolorum. Modi molestiae reprehenderit voluptatibus, vitae error mollitia tenetur totam officia cupiditate impedit, commodi laborum aspernatur libero. Ea!
+                                            Quo porro sunt, placeat vero rerum, hic eum, cum veritatis asperiores recusandae aliquid. Dolorem totam incidunt eum nobis. Rem pariatur doloremque, delectus cum temporibus ullam error animi! Eaque, doloribus esse?
+                                            Consequatur voluptate facilis eveniet vero earum magnam velit omnis quae labore molestias architecto vitae tempora ipsa, ex sequi voluptatum quidem optio suscipit amet laborum saepe et laboriosam maiores culpa! Quas.</p>
+                                            <div class="reviews__review-bottom">
+                                                <p class="reviews__review-name">Анастасия Картофелева</p>
+                                                <div>
+                                                    <p class="reviews__review-prof">Администратор</p>
+                                                    <hr class="reviews__lineUnder">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="reviews__review">
+                                            <p class="reviews__review-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum blanditiis, reiciendis quaerat, nihil vero expedita labore quo alias qui veritatis quisquam, id quibusdam corrupti delectus nulla accusantium dolore sapiente natus!
+                                            Sunt, quasi illum facilis necessitatibus pariatur nulla autem eos numquam quae odio. Ut sit placeat soluta molestias! Sint, ex? Quo doloribus alias nam eos corporis, eaque iure impedit nesciunt hic.
+                                            Soluta fuga autem ipsam facere, animi similique, minima at voluptatibus libero aspernatur dolorum. Modi molestiae reprehenderit voluptatibus, vitae error mollitia tenetur totam officia cupiditate impedit, commodi laborum aspernatur libero. Ea!
+                                            Quo porro sunt, placeat vero rerum, hic eum, cum veritatis asperiores recusandae aliquid. Dolorem totam incidunt eum nobis. Rem pariatur doloremque, delectus cum temporibus ullam error animi! Eaque, doloribus esse?
+                                            Consequatur voluptate facilis eveniet vero earum magnam velit omnis quae labore molestias architecto vitae tempora ipsa, ex sequi voluptatum quidem optio suscipit amet laborum saepe et laboriosam maiores culpa! Quas.</p>
+                                            <div class="reviews__review-bottom">
+                                                <p class="reviews__review-name">Анастасия Картофелева</p>
+                                                <div>
+                                                    <p class="reviews__review-prof">Администратор</p>
+                                                    <hr class="reviews__lineUnder">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <hr class="reviews__line">
-                            <div class="reviews__left-content">
-                                <img class="reviews__background" src="img/review/backReview.svg" alt=""">
-                                <div class="reviews__reviews">
-                                    <div class="reviews__review">
-                                        <p class="reviews__review-text">Если бы у меня был такой инструктор по вождению, я бы сэкономила кучу нервов и времени. У Димы есть педагогический талант безусловно. Можно быть спецом, но не уметь объяснить. Для этого нужно иметь талант, и он у него есть. Других яхтенных инструкторов не видела, но видела инструкторов и тренеров в других областях. Дима не разражается и может повторить одно и то же  так, что люди поймут, и до тех пор, пока до них не дойдет. У него получается держать себя в руках, не раздражаться. В итоге ты не чувствуешь себя дурачком или неумехой.</p>
-                                        <div class="reviews__review-bottom">
-                                            <p class="reviews__review-name">Наталья Милютина</p>
-                                            <div>
-                                                <p class="reviews__review-prof">Руководитель отдела продаж</p>
-                                                <hr class="reviews__lineUnder">
-                                            </div>
-                                        </div>
+                            <div class="reviews__right">
+                                <div class="reviews__imgs">
+                                    <div class="reviews__img">
+                                        <img class="reviews__img-item" src="img/review/photo.png" alt="">
                                     </div>
-                                    <div class="reviews__review">
-                                        <p class="reviews__review-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum blanditiis, reiciendis quaerat, nihil vero expedita labore quo alias qui veritatis quisquam, id quibusdam corrupti delectus nulla accusantium dolore sapiente natus!
-                                        Sunt, quasi illum facilis necessitatibus pariatur nulla autem eos numquam quae odio. Ut sit placeat soluta molestias! Sint, ex? Quo doloribus alias nam eos corporis, eaque iure impedit nesciunt hic.
-                                        Soluta fuga autem ipsam facere, animi similique, minima at voluptatibus libero aspernatur dolorum. Modi molestiae reprehenderit voluptatibus, vitae error mollitia tenetur totam officia cupiditate impedit, commodi laborum aspernatur libero. Ea!
-                                        Quo porro sunt, placeat vero rerum, hic eum, cum veritatis asperiores recusandae aliquid. Dolorem totam incidunt eum nobis. Rem pariatur doloremque, delectus cum temporibus ullam error animi! Eaque, doloribus esse?
-                                        Consequatur voluptate facilis eveniet vero earum magnam velit omnis quae labore molestias architecto vitae tempora ipsa, ex sequi voluptatum quidem optio suscipit amet laborum saepe et laboriosam maiores culpa! Quas.</p>
-                                        <div class="reviews__review-bottom">
-                                            <p class="reviews__review-name">Анастасия Картофелева</p>
-                                            <div>
-                                                <p class="reviews__review-prof">Администратор</p>
-                                                <hr class="reviews__lineUnder">
-                                            </div>
-                                        </div>
+                                    <div class="reviews__img">
+                                        <img class="reviews__img-item" src="img/review/photo.png" alt="">
                                     </div>
-                                    <div class="reviews__review">
-                                        <p class="reviews__review-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum blanditiis, reiciendis quaerat, nihil vero expedita labore quo alias qui veritatis quisquam, id quibusdam corrupti delectus nulla accusantium dolore sapiente natus!
-                                        Sunt, quasi illum facilis necessitatibus pariatur nulla autem eos numquam quae odio. Ut sit placeat soluta molestias! Sint, ex? Quo doloribus alias nam eos corporis, eaque iure impedit nesciunt hic.
-                                        Soluta fuga autem ipsam facere, animi similique, minima at voluptatibus libero aspernatur dolorum. Modi molestiae reprehenderit voluptatibus, vitae error mollitia tenetur totam officia cupiditate impedit, commodi laborum aspernatur libero. Ea!
-                                        Quo porro sunt, placeat vero rerum, hic eum, cum veritatis asperiores recusandae aliquid. Dolorem totam incidunt eum nobis. Rem pariatur doloremque, delectus cum temporibus ullam error animi! Eaque, doloribus esse?
-                                        Consequatur voluptate facilis eveniet vero earum magnam velit omnis quae labore molestias architecto vitae tempora ipsa, ex sequi voluptatum quidem optio suscipit amet laborum saepe et laboriosam maiores culpa! Quas.</p>
-                                        <div class="reviews__review-bottom">
-                                            <p class="reviews__review-name">Анастасия Картофелева</p>
-                                            <div>
-                                                <p class="reviews__review-prof">Администратор</p>
-                                                <hr class="reviews__lineUnder">
-                                            </div>
-                                        </div>
+                                    <div class="reviews__img">
+                                        <img class="reviews__img-item" src="img/review/photo.png" alt="">
                                     </div>
-                                    <div class="reviews__review">
-                                        <p class="reviews__review-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum blanditiis, reiciendis quaerat, nihil vero expedita labore quo alias qui veritatis quisquam, id quibusdam corrupti delectus nulla accusantium dolore sapiente natus!
-                                        Sunt, quasi illum facilis necessitatibus pariatur nulla autem eos numquam quae odio. Ut sit placeat soluta molestias! Sint, ex? Quo doloribus alias nam eos corporis, eaque iure impedit nesciunt hic.
-                                        Soluta fuga autem ipsam facere, animi similique, minima at voluptatibus libero aspernatur dolorum. Modi molestiae reprehenderit voluptatibus, vitae error mollitia tenetur totam officia cupiditate impedit, commodi laborum aspernatur libero. Ea!
-                                        Quo porro sunt, placeat vero rerum, hic eum, cum veritatis asperiores recusandae aliquid. Dolorem totam incidunt eum nobis. Rem pariatur doloremque, delectus cum temporibus ullam error animi! Eaque, doloribus esse?
-                                        Consequatur voluptate facilis eveniet vero earum magnam velit omnis quae labore molestias architecto vitae tempora ipsa, ex sequi voluptatum quidem optio suscipit amet laborum saepe et laboriosam maiores culpa! Quas.</p>
-                                        <div class="reviews__review-bottom">
-                                            <p class="reviews__review-name">Анастасия Картофелева</p>
-                                            <div>
-                                                <p class="reviews__review-prof">Администратор</p>
-                                                <hr class="reviews__lineUnder">
-                                            </div>
-                                        </div>
+                                    <div class="reviews__img">
+                                        <img class="reviews__img-item" src="img/review/photo.png" alt="">
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="reviews__right">
-                            <div class="reviews__imgs">
-                                <div class="reviews__img">
-                                    <img class="reviews__img-item" src="img/review/photo.png" alt="">
+                        <div class="reviews__bottom">
+                            <div class="reviews__bottom-reviews">
+                                <div class="reviews__bottom-review--wrapper">
+                                    <div class="reviews__bottom-review">
+                                        <img src="img/slider/image.png" alt="" class="reviews__bottom-review--image">
+                                        <img src="img/slider/image.png" alt="" class="reviews__bottom-review--image">
+                                        <img src="img/slider/image.png" alt="" class="reviews__bottom-review--image">
+                                        <img src="img/slider/image.png" alt="" class="reviews__bottom-review--image">
+                                    </div>
                                 </div>
-                                <div class="reviews__img">
-                                    <img class="reviews__img-item" src="img/review/photo.png" alt="">
+                                <div class="reviews__bottom-review--wrapper">
+                                    <div class="reviews__bottom-review">
+                                        <img src="img/slider/image.png" alt="" class="reviews__bottom-review--image">
+                                        <img src="img/slider/image.png" alt="" class="reviews__bottom-review--image">
+                                        <img src="img/slider/image.png" alt="" class="reviews__bottom-review--image">
+                                        <img src="img/slider/image.png" alt="" class="reviews__bottom-review--image">
+                                    </div>
                                 </div>
-                                <div class="reviews__img">
-                                    <img class="reviews__img-item" src="img/review/photo.png" alt="">
+                                <div class="reviews__bottom-review--wrapper">
+                                    <div class="reviews__bottom-review">
+                                        <img src="img/slider/image.png" alt="" class="reviews__bottom-review--image">
+                                        <img src="img/slider/image.png" alt="" class="reviews__bottom-review--image">
+                                        <img src="img/slider/image.png" alt="" class="reviews__bottom-review--image">
+                                        <img src="img/slider/image.png" alt="" class="reviews__bottom-review--image">
+                                    </div>
                                 </div>
-                                <div class="reviews__img">
-                                    <img class="reviews__img-item" src="img/review/photo.png" alt="">
+                                <div class="reviews__bottom-review--wrapper">
+                                    <div class="reviews__bottom-review">
+                                        <img src="img/slider/image.png" alt="" class="reviews__bottom-review--image">
+                                        <img src="img/slider/image.png" alt="" class="reviews__bottom-review--image">
+                                        <img src="img/slider/image.png" alt="" class="reviews__bottom-review--image">
+                                        <img src="img/slider/image.png" alt="" class="reviews__bottom-review--image">
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -991,6 +1031,32 @@
                     </div>
                 </div>
             </section>
+
+            <div class="map">
+                <div class="container">
+                    <div class="map__inner">
+                        <div class="map__left">
+                            <img src="img/map.png" alt="" class="map__img">
+                        </div>
+                        <div class="map__right">
+                            <div class="map__box">
+                                <p class="map__title">Адреса магазинов</p>
+                                <p class="map__desc">г. Ростов-на-Дону, ул Каскадная 102</p>
+                                <p class="map__desc">г. Ростов-на-Дону, ул Каскадная 102</p>
+                            </div>
+                            <div class="map__box">
+                                <p class="map__title">Телефон</p>
+                                <p class="map__desc">+ 7 (900) 909-00-90</p>
+                            </div>
+                            <div class="map__box">
+                                <p class="map__title">График работы:</p>
+                                <p class="map__desc">Вт - Вс: с 10:00 до 19:30 </p>
+                                <p class="map__desc">Пн: <span class="map__desc-red">Выходной</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </main>
 
         <footer class="footer">
@@ -1094,6 +1160,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> <!-- Jquery -->
         <script src="js/customSelect.js"></script> <!-- Моя "библеотека" с кастомным селектом -->
         <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> <!-- Slick -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
         <script src="js/main.min.js"></script> <!-- Мой -->
     </body>
 </html>
